@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maillot Officiel Basket Ball</title>
+    <link rel="stylesheet" href="detailmaillot.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="Accueil">
+    <div class="topnav" id="myTopnav">
+        <div >
+            <img src="assets/clublogo.png" width="80px" height="80px" alt="logo club african">
+            
+        </div>
+        <nav>
+        <ul>
+            <input type="checkbox" id="check">
+            <label for="check">&#x268c;</label>
+        <li><a href="index.html">Acceuil</a></li>  
+        <li><a >Catégorie</a></li> 
+        <li><a href="contact.html">Contact</a></li>  
+        <li><a href="apropos.html">À propos</a></li> 
+        </ul>
+        <nav>
+      </div>
+    </header>
+    
+
+
+    <div class="container">
+        <div class="image-container">
+            <img src="assets/maillot.jpg" alt="Maillot Officiel ">
+        </div>
+        <div class="details-container">
+            <h1>Maillot Officiel Extérieur Adulte 2023/2024</h1>
+            <p class="price">110,000 <span>DT</span></p>
+
+            <form>
+                <label for="size">Taille</label>
+                <select id="size" name="size">
+                    <option value="">Choisir une option</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="color">Couleur</label>
+                <select id="color" name="color">
+                    <option value="">Choisir une option</option>
+                    <option value="red">Rouge</option>
+                    <option value="blue">Bleu</option>
+                    <option value="white">Blanc</option>
+                </select>
+
+                <button type="submit">Ajouter au panier</button>
+            </form>
+        </div>
+    </div>
+
+
+    <address>
+      <div class="Container Flex6">
+          <div>
+             
+              <img src="img/fone.png" alt="fone">
+              <p>+216 71 331 425 / +216 71 332 019
+
+              </p>
+          </div>
+          <div>
+              <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"><img src="img/mapa.png" alt="Mapa" id="iconeMapa"></a>
+              <img src="img/local.png" alt="local" id="iconeLocal">
+              <p>l'Avenue du Maghreb Arabe </p>
+              <p>1049 Tunis.</p>
+              
+              
+              <a href="mailto:seuemail@email.com?subject=HTML5CSS3">
+                  <img src="img/email.png" alt="email" title="Enviar E-mail">
+                  <p>contact@clubafricain.com</p>
+              </a>
+              
+          </div>
+          <div id="googleMaps">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.213162206983!2d10.1867845!3d36.8037168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34684d82c5e5%3A0xd37e3d1d41afbd9d!2sClub%20Africain%20Store!5e0!3m2!1spt-BR!2sbr!4v1696836950480!5m2!1spt-BR!2sbr" 
+                      
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </address>
+  <footer>
+      <div class="Container Flex5">
+          <div>
+              <p>&#169;<span id="copyrightYear"></span> - <a  target="_blank">Club Africain, Site Officiel</a></p>
+              
+          </div>
+          <div id="social">
+              <a href="https://www.youtube.com/@ClubAfricainOfficielle" target="_blank"><img src="img/youtube.png"
+                      alt="youtube"></a>
+              
+              <a href="https://www.facebook.com/clubafricain.com.tn" target="_blank"><img src="img/facebook.png"
+                      alt="facebook"></a>
+              <a href="https://www.instagram.com/clubafricain__officiel/?hl=en" target="_blank"><img src="img/instagram.png"
+                      alt="instagram"></a>
+              <a href="https://x.com/clubafricain?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+          </div>
+      </div>
+  </footer>
+  <a href="#Accueil" id="topo"><img src="img/topo.png" alt="topo do site"></a>
+
+  <script>
+      // Atualizar automaticamente o ano (footer - copyright)  
+      let ano = document.getElementById("copyrightYear")
+      let anoAtual = new Date().getFullYear()
+      ano.textContent = anoAtual
+  </script>
+</body>
+</html>

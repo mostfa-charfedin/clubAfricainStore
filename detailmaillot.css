@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  background-color: #c94c4c;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+}
+
+.topnav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.topnav ul li {
+  display: inline;
+}
+
+.topnav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.topnav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+label {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+ 
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 36px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 18px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff7070;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff5252;
+}
